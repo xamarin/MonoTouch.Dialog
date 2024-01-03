@@ -87,7 +87,7 @@ namespace MonoTouch.Dialog.Utilities
 		
 		static NSString nsDispatcher = new NSString ("x");
 		
-		static MD5CryptoServiceProvider checksum = new MD5CryptoServiceProvider ();
+		static MD5 checksum = MD5.Create ();
 		
 		/// <summary>
 		///    This contains the default loader which is configured to be 50 images
