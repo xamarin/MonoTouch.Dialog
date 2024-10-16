@@ -123,6 +123,7 @@ namespace MonoTouch.Dialog
 		public bool ShowCaption;
 	}
 
+#if !ONLY_TRIMMER_SAFE
 	public class BindingContext : IDisposable {
 		public RootElement Root;
 		Dictionary<Element,MemberAndInstance> mappings;
@@ -467,4 +468,5 @@ namespace MonoTouch.Dialog
 			}
 		}
 	}
+#endif // !ONLY_TRIMMER_SAFE
 }
